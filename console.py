@@ -142,7 +142,7 @@ class HBNBCommand(cmd.Cmd):
                     pass
             if hasattr(new_instance, key):
                 setattr(new_instance, key, value)
-        
+
         storage.new(new_instance)
         print(new_instance.id)
         new_instance.save()
@@ -340,6 +340,7 @@ class HBNBCommand(cmd.Cmd):
         """ Help information for the update class """
         print("Updates an object with new information")
         print("Usage: update <className> <id> <attName> <attVal>\n")
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
