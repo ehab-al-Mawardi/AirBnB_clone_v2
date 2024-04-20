@@ -5,15 +5,16 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(__name__i
 
-            @app.route('/', strict_slashes=False)
+@app.route('/', strict_slashes=False)
     
     def hello():
             """Return a given string."""
                 return "Hello HBNB!"
 
-            @app.route("/hbnb", strict_slashes=False)
+@app.route("/hbnb", strict_slashes=False)
+
     def hbnb():
              """Return a given string."""
                 return "HBNB"
